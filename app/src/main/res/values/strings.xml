@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Memory Rocket</string>
+    <string name="difficulty_str">Difficulty</string>
+    <string-array name="spinner_difficulty_entries">
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Hardcore</item>
+    </string-array>
 </resources>

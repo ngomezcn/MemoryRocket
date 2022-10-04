@@ -6,13 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".MenuActivity">
 
-    <TextView
+    <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:drawSelectorOnTop="true"
+
+        android:backgroundTint="@color/button_blue"
+        android:background="@color/button_gray"
+        android:fontFamily="@font/bruno_ace_regular"
+        android:letterSpacing="0.1"
+        android:paddingHorizontal="80dp"
+        android:paddingVertical="15dp"
+        android:textColorHint="@color/blank"
+        android:textSize="18sp"
+
+        android:entries="@array/spinner_difficulty_entries"
+        />
+
+    <Button
+        android:id="@+id/btn_difficulty_selector"
+        android:layout_width="@dimen/std_btn_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:backgroundTint="@color/button_gray"
+        android:fontFamily="@font/bruno_ace_regular"
+        android:hint="@string/difficulty_str"
+
+        android:letterSpacing="0.1"
+        android:paddingHorizontal="80dp"
+        android:paddingVertical="15dp"
+        android:textColorHint="@color/blank"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:layout_width="@dimen/std_btn_width"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_blue"
+        android:fontFamily="@font/bruno_ace_regular"
+        android:hint="Play"
+
+        android:letterSpacing="0.1"
+        android:paddingHorizontal="80dp"
+        android:paddingVertical="15dp"
+        android:textColorHint="@color/blank"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_difficulty_selector" />
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
