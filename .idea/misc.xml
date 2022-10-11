@@ -3,12 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="../../../../../../../dades/NGOMEZ/AndroidProjects/MemoryRocket/app/src/main/res/layout-v28/activity_game_screen.xml" value="0.26614583333333336" />
+        <entry key="../../../../../../../dades/NGOMEZ/AndroidProjects/MemoryRocket/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2685" />
+        <entry key="../../../../../../../dades/NGOMEZ/AndroidProjects/MemoryRocket/app/src/main/res/layout-v28/activity_game.xml" value="0.35625" />
+        <entry key="../../../../../../../dades/NGOMEZ/AndroidProjects/MemoryRocket/app/src/main/res/layout-v28/activity_game_screen.xml" value="0.33" />
+        <entry key="../../../../../../../dades/NGOMEZ/AndroidProjects/MemoryRocket/app/src/main/res/layout/activity_game.xml" value="0.25" />
         <entry key="../../../../../../../dades/NGOMEZ/AndroidProjects/MemoryRocket/app/src/main/res/layout/activity_game_screen.xml" value="0.25" />
         <entry key="../../../../../../../dades/NGOMEZ/AndroidProjects/MemoryRocket/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="../../../../../../../dades/NGOMEZ/AndroidProjects/MemoryRocket/app/src/main/res/layout/activity_menu.xml" value="0.33" />
+        <entry key="../../../../../../../dades/NGOMEZ/AndroidProjects/MemoryRocket/app/src/main/res/layout/activity_score.xml" value="0.33" />
         <entry key="../../../../../../../dades/NGOMEZ/AndroidProjects/MemoryRocket/app/src/main/res/layout/activity_score_screen.xml" value="0.25104166666666666" />
+        <entry key="../../../../../../../dades/NGOMEZ/AndroidProjects/MemoryRocket/app/src/main/res/layout/activity_splash.xml" value="0.16666666666666666" />
         <entry key="../../../../../../../dades/NGOMEZ/AndroidProjects/MemoryRocket/app/src/main/res/layout/memory_images.xml" value="0.26614583333333336" />
         <entry key="../../../../../../../dades/NGOMEZ/AndroidProjects/MemoryRocket/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.227" />
+        <entry key="../../../../../../../dades/NGOMEZ/AndroidProjects/MemoryRocket/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.195" />
       </map>
     </option>
   </component>

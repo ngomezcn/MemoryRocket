@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/secondary_background"
-    tools:context=".score_screen">
+    tools:context=".ScoreActivity">
 
     <androidx.cardview.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -32,8 +32,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SCORE
-                POINTS"
+                android:text="@string/score_points"
                 android:textColor="@color/blank"
                 android:textSize="40dp"
                 android:textAlignment="center"
@@ -42,7 +41,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="20"
+                android:text="0"
                 android:textColor="@color/blank"
                 android:textSize="115dp"
                 android:textAlignment="center"
@@ -55,7 +54,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/btn_play"
+        android:id="@+id/btn_menu"
         android:layout_width="@dimen/std_btn_width"
         android:layout_height="@dimen/std_btn_height"
         android:backgroundTint="@color/button_gray"
@@ -63,7 +62,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/score_container"
-        android:hint="@string/str_btn_menu"
+        android:hint="@string/btn_menu"
         android:layout_marginTop="50dp"
         android:letterSpacing="0.1"
         android:paddingHorizontal="80dp"
@@ -71,7 +70,7 @@
         android:textSize="@dimen/std_btn_font_size" />
 
     <Button
-        android:id="@+id/btn_help"
+        android:id="@+id/btn_play_again"
         android:layout_width="@dimen/std_btn_width"
         android:layout_height="@dimen/std_btn_height"
         android:backgroundTint="@color/button_blue"
@@ -83,6 +82,6 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_play" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

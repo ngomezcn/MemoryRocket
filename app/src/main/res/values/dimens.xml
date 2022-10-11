@@ -3,4 +3,5 @@
     <dimen name="std_btn_width">330dp</dimen>
     <dimen name="std_btn_height">63dp</dimen>
     <dimen name="std_btn_font_size">15sp</dimen>
+    <dimen name="memoryu_back_corner_radius">33dp</dimen>
 </resources>
