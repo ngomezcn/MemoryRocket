@@ -26,25 +26,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent=".1" />
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/last_vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent=".9" />
+        app:layout_constraintGuide_percent=".10" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/second_vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent=".45" />
+        app:layout_constraintGuide_percent=".30" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/third_vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent=".55" />
+        app:layout_constraintGuide_percent=".40" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/four_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".60" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/five_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".70" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/six_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".90" />
+
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/first_horizontal"
         android:layout_width="wrap_content"
@@ -56,31 +70,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".35" />
+        app:layout_constraintGuide_percent=".45" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/third_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".40" />
+        app:layout_constraintGuide_percent=".55" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/four_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".60" />
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/five_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".65" />
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/last_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
         app:layout_constraintGuide_percent=".85" />
+
+
     <TextView
         android:id="@+id/movement_counter"
         android:layout_width="wrap_content"
@@ -93,7 +97,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/last_horizontal" />
+        app:layout_constraintTop_toBottomOf="@+id/four_horizontal" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -103,7 +107,7 @@
         android:textSize="25sp"
 
         app:layout_constraintStart_toEndOf="@+id/movement_counter"
-        app:layout_constraintTop_toBottomOf="@+id/last_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/third_horizontal"
         app:layout_constraintTop_toTopOf="@+id/movement_counter"
         android:layout_marginLeft="7dp" />
 
@@ -136,7 +140,7 @@
         app:layout_constraintTop_toTopOf="@+id/first_horizontal"
         app:layout_constraintStart_toStartOf="@+id/third_vertical"
         app:layout_constraintBottom_toBottomOf="@+id/second_horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/last_vertical"
+        app:layout_constraintEnd_toEndOf="@+id/four_vertical"
         card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
         >
         <ImageView
@@ -145,7 +149,24 @@
             android:background="@drawable/memory_hide"/>
     </androidx.cardview.widget.CardView>
 
-    <!-- Memory 03 -->
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:backgroundTint="#2639B4"
+        android:background="#2639B4"
+        app:layout_constraintTop_toTopOf="@+id/first_horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/second_horizontal"
+        app:layout_constraintStart_toStartOf="@+id/five_vertical"
+        app:layout_constraintEnd_toEndOf="@+id/six_vertical"
+        card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/memory_hide"/>
+    </androidx.cardview.widget.CardView>
+
     <androidx.cardview.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="0px"
@@ -153,9 +174,9 @@
         android:backgroundTint="#2639B4"
         android:background="#2639B4"
         app:layout_constraintTop_toTopOf="@+id/third_horizontal"
-        app:layout_constraintStart_toStartOf="@+id/third_vertical"
         app:layout_constraintBottom_toBottomOf="@+id/four_horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/last_vertical"
+        app:layout_constraintStart_toStartOf="@+id/five_vertical"
+        app:layout_constraintEnd_toEndOf="@+id/six_vertical"
         card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
         >
         <ImageView
@@ -164,7 +185,6 @@
             android:background="@drawable/memory_hide"/>
     </androidx.cardview.widget.CardView>
 
-    <!-- Memory 04 -->
     <androidx.cardview.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="0px"
@@ -172,8 +192,8 @@
         android:backgroundTint="#2639B4"
         android:background="#2639B4"
         app:layout_constraintTop_toTopOf="@+id/third_horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/four_horizontal"
         app:layout_constraintStart_toStartOf="@+id/first_vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/four_horizontal"
         app:layout_constraintEnd_toEndOf="@+id/second_vertical"
         card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
         >
@@ -183,17 +203,16 @@
             android:background="@drawable/memory_hide"/>
     </androidx.cardview.widget.CardView>
 
-    <!-- Memory 05 -->
     <androidx.cardview.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="0px"
         android:layout_height="0px"
         android:backgroundTint="#2639B4"
         android:background="#2639B4"
-        app:layout_constraintTop_toTopOf="@+id/five_horizontal"
-        app:layout_constraintStart_toStartOf="@+id/first_vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/last_horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/second_vertical"
+        app:layout_constraintTop_toTopOf="@+id/third_horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/four_horizontal"
+        app:layout_constraintStart_toStartOf="@+id/third_vertical"
+        app:layout_constraintEnd_toEndOf="@+id/four_vertical"
         card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
         >
         <ImageView
@@ -202,22 +221,5 @@
             android:background="@drawable/memory_hide"/>
     </androidx.cardview.widget.CardView>
 
-    <!-- Memory 06 -->
-    <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:layout_width="0px"
-        android:layout_height="0px"
-        android:backgroundTint="#2639B4"
-        android:background="#2639B4"
-        app:layout_constraintTop_toTopOf="@+id/five_horizontal"
-        app:layout_constraintStart_toStartOf="@+id/third_vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/last_horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/last_vertical"
-        card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
-        >
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/memory_hide"/>
-    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
