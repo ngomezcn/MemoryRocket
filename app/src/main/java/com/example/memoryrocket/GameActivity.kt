@@ -13,13 +13,14 @@ class GameActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityGameBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.timer.start()
 
         // Temporal per mostrar el fluix de treball
         binding.root.setOnClickListener {
+            binding.timer.stop()
             val intent = Intent(this, ScoreActivity::class.java)
             startActivity(intent)
         }
 
-        binding.timer.start()
     }
 }
