@@ -109,7 +109,7 @@
 
     <!-- Memory 01 -->
     <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/xd1"
         android:layout_width="0px"
         android:layout_height="0px"
         android:backgroundTint="#2639B4"
@@ -118,17 +118,18 @@
         app:layout_constraintStart_toStartOf="@+id/first_vertical"
         app:layout_constraintBottom_toBottomOf="@+id/second_horizontal"
         app:layout_constraintEnd_toEndOf="@+id/second_vertical"
-        card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
+        app:cardCornerRadius="@dimen/memoryu_back_corner_radius"
         >
+
         <ImageView
+            android:id="@+id/card_01"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/memory_hide"/>
+            android:background="@drawable/memory_hide" />
     </androidx.cardview.widget.CardView>
 
     <!-- Memory 02 -->
     <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="0px"
         android:layout_height="0px"
         android:backgroundTint="#2639B4"
@@ -137,17 +138,18 @@
         app:layout_constraintStart_toStartOf="@+id/third_vertical"
         app:layout_constraintBottom_toBottomOf="@+id/second_horizontal"
         app:layout_constraintEnd_toEndOf="@+id/last_vertical"
-        card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
+        app:cardCornerRadius="@dimen/memoryu_back_corner_radius"
         >
+
         <ImageView
+            android:id="@+id/card_02"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/memory_hide"/>
+            android:background="@drawable/memory_hide" />
     </androidx.cardview.widget.CardView>
 
     <!-- Memory 03 -->
     <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="0px"
         android:layout_height="0px"
         android:backgroundTint="#2639B4"
@@ -156,17 +158,18 @@
         app:layout_constraintStart_toStartOf="@+id/third_vertical"
         app:layout_constraintBottom_toBottomOf="@+id/four_horizontal"
         app:layout_constraintEnd_toEndOf="@+id/last_vertical"
-        card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
+        app:cardCornerRadius="@dimen/memoryu_back_corner_radius"
         >
+
         <ImageView
+            android:id="@+id/card_04"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/memory_hide"/>
+            android:background="@drawable/memory_hide" />
     </androidx.cardview.widget.CardView>
 
     <!-- Memory 04 -->
     <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="0px"
         android:layout_height="0px"
         android:backgroundTint="#2639B4"
@@ -175,17 +178,18 @@
         app:layout_constraintStart_toStartOf="@+id/first_vertical"
         app:layout_constraintBottom_toBottomOf="@+id/four_horizontal"
         app:layout_constraintEnd_toEndOf="@+id/second_vertical"
-        card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
+        app:cardCornerRadius="@dimen/memoryu_back_corner_radius"
         >
+
         <ImageView
+            android:id="@+id/card_03"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/memory_hide"/>
+            android:background="@drawable/memory_hide" />
     </androidx.cardview.widget.CardView>
 
     <!-- Memory 05 -->
     <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="0px"
         android:layout_height="0px"
         android:backgroundTint="#2639B4"
@@ -194,17 +198,18 @@
         app:layout_constraintStart_toStartOf="@+id/first_vertical"
         app:layout_constraintBottom_toBottomOf="@+id/last_horizontal"
         app:layout_constraintEnd_toEndOf="@+id/second_vertical"
-        card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
+        app:cardCornerRadius="@dimen/memoryu_back_corner_radius"
         >
+
         <ImageView
+            android:id="@+id/card_05"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/memory_hide"/>
+            android:background="@drawable/memory_hide" />
     </androidx.cardview.widget.CardView>
 
     <!-- Memory 06 -->
     <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="0px"
         android:layout_height="0px"
         android:backgroundTint="#2639B4"
@@ -213,11 +218,13 @@
         app:layout_constraintStart_toStartOf="@+id/third_vertical"
         app:layout_constraintBottom_toBottomOf="@+id/last_horizontal"
         app:layout_constraintEnd_toEndOf="@+id/last_vertical"
-        card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
+        app:cardCornerRadius="@dimen/memoryu_back_corner_radius"
         >
+
         <ImageView
+            android:id="@+id/card_06"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/memory_hide"/>
+            android:background="@drawable/memory_hide" />
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
