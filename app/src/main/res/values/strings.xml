@@ -6,8 +6,8 @@
     <string name="btn_menu">MENU</string>
     <string name="play_again">PLAY AGAIN</string>
     <string name="score_points">SCORE POINTS</string>
-    <string-array name="difficulty_entries">
-        <item>EASY</item>
+    <string name="movements">MOVEMENTS:</string>
+    <string-array name="diff_entries">
         <item>NORMAL</item>
         <item>HARD</item>
     </string-array>

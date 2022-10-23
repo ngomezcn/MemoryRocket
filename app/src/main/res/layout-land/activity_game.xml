@@ -57,8 +57,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent=".90" />
-
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/first_horizontal"
         android:layout_width="wrap_content"
@@ -84,14 +82,13 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent=".85" />
 
-
     <TextView
         android:id="@+id/movement_counter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/blank"
         android:fontFamily="@font/bruno_ace_regular"
-        android:text="MOVEMENTS:"
+        android:text="@string/movements"
         android:textSize="25sp"
 
         app:layout_constraintStart_toStartOf="parent"
@@ -99,6 +96,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/four_horizontal" />
     <TextView
+        android:id="@+id/movements"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/blank"
@@ -111,20 +109,20 @@
         app:layout_constraintTop_toTopOf="@+id/movement_counter"
         android:layout_marginLeft="7dp" />
 
+
     <!-- Memory 01 -->
     <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="0px"
         android:layout_height="0px"
-        android:backgroundTint="#2639B4"
-        android:background="#2639B4"
+        android:backgroundTint="@color/transparent"
         app:layout_constraintTop_toTopOf="@+id/first_horizontal"
         app:layout_constraintStart_toStartOf="@+id/first_vertical"
         app:layout_constraintBottom_toBottomOf="@+id/second_horizontal"
         app:layout_constraintEnd_toEndOf="@+id/second_vertical"
-        card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
-        >
+        app:cardCornerRadius="@dimen/memoryu_back_corner_radius">
         <ImageView
+            android:scaleType = "centerCrop"
+            android:id="@+id/card_01"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/memory_hide"/>
@@ -132,94 +130,89 @@
 
     <!-- Memory 02 -->
     <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="0px"
         android:layout_height="0px"
-        android:backgroundTint="#2639B4"
-        android:background="#2639B4"
+        android:backgroundTint="@color/transparent"
         app:layout_constraintTop_toTopOf="@+id/first_horizontal"
         app:layout_constraintStart_toStartOf="@+id/third_vertical"
         app:layout_constraintBottom_toBottomOf="@+id/second_horizontal"
         app:layout_constraintEnd_toEndOf="@+id/four_vertical"
-        card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
-        >
+        app:cardCornerRadius="@dimen/memoryu_back_corner_radius">
         <ImageView
+            android:scaleType = "centerCrop"
+            android:id="@+id/card_02"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/memory_hide"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="0px"
         android:layout_height="0px"
-        android:backgroundTint="#2639B4"
-        android:background="#2639B4"
+        android:backgroundTint="@color/transparent"
         app:layout_constraintTop_toTopOf="@+id/first_horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/second_horizontal"
         app:layout_constraintStart_toStartOf="@+id/five_vertical"
         app:layout_constraintEnd_toEndOf="@+id/six_vertical"
-        card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
-        >
+        app:cardCornerRadius="@dimen/memoryu_back_corner_radius">
         <ImageView
+            android:scaleType = "centerCrop"
+            android:id="@+id/card_03"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/memory_hide"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="0px"
         android:layout_height="0px"
-        android:backgroundTint="#2639B4"
-        android:background="#2639B4"
+        android:backgroundTint="@color/transparent"
         app:layout_constraintTop_toTopOf="@+id/third_horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/four_horizontal"
         app:layout_constraintStart_toStartOf="@+id/five_vertical"
         app:layout_constraintEnd_toEndOf="@+id/six_vertical"
-        card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
-        >
+        app:cardCornerRadius="@dimen/memoryu_back_corner_radius">
         <ImageView
+            android:scaleType = "centerCrop"
+            android:id="@+id/card_06"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/memory_hide"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="0px"
         android:layout_height="0px"
-        android:backgroundTint="#2639B4"
-        android:background="#2639B4"
+        android:backgroundTint="@color/transparent"
         app:layout_constraintTop_toTopOf="@+id/third_horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/four_horizontal"
         app:layout_constraintStart_toStartOf="@+id/first_vertical"
         app:layout_constraintEnd_toEndOf="@+id/second_vertical"
-        card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
-        >
+        app:cardCornerRadius="@dimen/memoryu_back_corner_radius">
+
         <ImageView
+            android:scaleType = "centerCrop"
+            android:id="@+id/card_04"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/memory_hide"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="0px"
         android:layout_height="0px"
-        android:backgroundTint="#2639B4"
-        android:background="#2639B4"
+        android:backgroundTint="@color/transparent"
         app:layout_constraintTop_toTopOf="@+id/third_horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/four_horizontal"
         app:layout_constraintStart_toStartOf="@+id/third_vertical"
         app:layout_constraintEnd_toEndOf="@+id/four_vertical"
-        card_view:cardCornerRadius="@dimen/memoryu_back_corner_radius"
-        >
+        app:cardCornerRadius="@dimen/memoryu_back_corner_radius">
+
         <ImageView
+            android:scaleType = "centerCrop"
+            android:id="@+id/card_05"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/memory_hide"/>
     </androidx.cardview.widget.CardView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

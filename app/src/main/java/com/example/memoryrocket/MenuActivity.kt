@@ -22,15 +22,5 @@ class MenuActivity : AppCompatActivity() {
             val intent = Intent(this, GameActivity::class.java)
             startActivity(intent)
         }
-
-
-        val spinner = binding.btnDifficultySelector
-        val adapter = ArrayAdapter.createFromResource(
-            this,
-            R.array.phoneTypes, R.layout.simple_spinner_item
-        )
-        adapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item)
-        spinner.adapter = adapter
-
     }
 }

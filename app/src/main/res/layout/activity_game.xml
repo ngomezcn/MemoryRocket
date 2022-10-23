@@ -7,6 +7,17 @@
     android:background="@drawable/secondary_background"
     tools:context=".GameActivity">
 
+    <ImageView
+        android:id="@+id/btn_pause"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
     <Chronometer
         android:id="@+id/timer"
         android:layout_width="wrap_content"
@@ -95,6 +106,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/last_horizontal" />
     <TextView
+        android:id="@+id/movements"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/blank"
@@ -109,7 +121,6 @@
 
     <!-- Memory 01 -->
     <androidx.cardview.widget.CardView
-        android:id="@+id/xd1"
         android:layout_width="0px"
         android:layout_height="0px"
         android:backgroundTint="@color/transparent"
@@ -117,15 +128,13 @@
         app:layout_constraintStart_toStartOf="@+id/first_vertical"
         app:layout_constraintBottom_toBottomOf="@+id/second_horizontal"
         app:layout_constraintEnd_toEndOf="@+id/second_vertical"
-        app:cardCornerRadius="@dimen/memoryu_back_corner_radius"
-        >
-
+        app:cardCornerRadius="@dimen/memoryu_back_corner_radius">
         <ImageView
-
             android:id="@+id/card_01"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/memory_hide" />
+            android:background="@drawable/memory_hide"
+             />
     </androidx.cardview.widget.CardView>
 
     <!-- Memory 02 -->

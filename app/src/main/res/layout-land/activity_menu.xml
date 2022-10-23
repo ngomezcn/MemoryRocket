@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/menu_background_landscape"
+    android:background="@drawable/secondary_background"
     tools:context=".MenuActivity">
 
 
@@ -15,13 +15,15 @@
         android:layout_height="@dimen/std_btn_height"
         android:fontFamily="@font/bruno_ace_regular"
         android:hint="@string/difficulty"
-        android:entries="@array/difficulty_entries"
+        android:entries="@array/diff_entries"
         android:background="@color/button_gray"
         android:textAlignment="center"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
     <!-- Pendiente de implementar <Button
         android:id="@+id/btn_difficulty_selector"
